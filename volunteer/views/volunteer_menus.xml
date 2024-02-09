@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="volunteer_menu_root" name="Volunteer">
+        <menuitem id="volunteer_menu_first" name="Volunteer">
+        <menuitem id="volunteer_menu_action" action="volunteer_tree_action"  />
+        </menuitem >
+    </menuitem>
+
+</odoo>
