@@ -7,15 +7,30 @@
         <field name="model">volunteer.volunteer</field>
         <field name="arch" type="xml">
             <form>
-                <sheet>
-                    <h1>
-                        <field name="name" string="Name" />
-                    </h1>
-                    <field name="skills" string="Skill"></field>
-                </sheet>
+
+                <h1>
+                    <field name="name" string="name" />
+                </h1>
+                <group>
+                    <field name="mobile" string="Mobile"/>
+                    <field name="skills" string="Skills"/>
+                </group>
             </form>
         </field>
+    </record>
 
+    <!-- Tree view -->
+
+    <record id="volunteer_tyree" model="ir.ui.view">
+        <field name="name">volunteer.tree</field>
+        <field name="model">volunteer.volunteer</field>
+        <field name="arch" type="xml">
+            <tree string="Volunteer">
+                <field name="name" string="Name" />
+                <field name="mobile"/>
+                <field name="skills"/>
+            </tree>
+        </field>
     </record>
 
     <!-- Action -->

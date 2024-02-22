@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_volunteer_volunteer,access_volunteer_volunteer,model_volunteer_volunteer,base.group_user,1,1,1,1
+access_volunteer_skill,access_volunteer_skill,model_volunteer_skill,base.group_user,1,1,1,1
+access_volunteer_event,access_volunteer_event,model_volunteer_event,base.group_user,1,1,1,1

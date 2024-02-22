@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Form -->
+    <record model="ir.ui.view" id="volunteer_event_form">
+        <field name="name">volunteer.event.form</field>
+        <field name="model">volunteer.event</field>
+        <field name="arch" type="xml">
+            <form>
+                <h1>
+                    <field name="title" />
+                </h1>
+                <group>
+                    <field name="description" string="Description"/>
+                    <field name="date"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree view -->
+
+    <record id="volunteer_event_tree" model="ir.ui.view">
+        <field name="name">volunteer.event.tree</field>
+        <field name="model">volunteer.event</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="title" string="Name" />
+                <field name="description" string="Description"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record model="ir.actions.act_window" id="volunteer_events_action">
+        <field name="name">Events</field>
+        <field name="res_model">volunteer.event</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+				No current Events available!
+            </p>
+            <p>
+				Check back some other time!
+            </p>
+        </field>
+    </record>
+</odoo>

@@ -2,8 +2,11 @@
 <odoo>
     <menuitem id="volunteer_menu_root" name="Volunteer">
         <menuitem id="volunteer_menu_first" name="Volunteer">
-        <menuitem id="volunteer_menu_action" action="volunteer_tree_action"  />
+            <menuitem id="volunteer_menu_action" action="volunteer_tree_action" />
+            <menuitem id="volunteer_skill_action" action="volunteer_skills_action" />
         </menuitem >
+        <menuitem id="volunteer_menu_second" name="Events">
+            <menuitem id="volunteer_event_action" action="volunteer_events_action" />
+        </menuitem>
     </menuitem>
-
 </odoo>
